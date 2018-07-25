@@ -1,0 +1,45 @@
+<ion-content padding>
+	<ion-grid>
+		<ion-row>
+			<ion-col offset-4 col-4>
+				<img src="./../../assets/icon/xxx.png">
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+
+
+<div class="LoginPanel">
+	<ion-grid>
+		<ion-row>
+			<ion-col col-12>
+					<ion-list class="loginPanelList">
+					 	<ion-item id="Username">
+					    	<ion-label floating>Username</ion-label>
+					    	<ion-input type="text"></ion-input>
+					    </ion-item>
+						<ion-item>
+					    	<ion-label floating>Password</ion-label>
+					    	<ion-input type="password"></ion-input>
+					    </ion-item>
+					</ion-list>
+			</ion-col>
+
+			<ion-col col-12>
+				<ion-list class="togglePart">
+					<ion-item id="toggleItem">
+					   <ion-label>Beni Hatırla</ion-label>
+					   <ion-toggle></ion-toggle>
+					</ion-item>
+				</ion-list>
+			</ion-col>
+			<ion-col col-12>
+				<button ion-button class="girisYapButton" (click)="modalOpen()">Giriş Yap</button>
+			</ion-col>
+			<ion-col col-8 offset-2>
+				<img src="./../../assets/icon/logo.png">
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+</div>
+	
+</ion-content>

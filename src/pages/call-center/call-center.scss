@@ -1,0 +1,39 @@
+page-call-center {
+	#searchIcon{
+		width: 24px;
+		height: auto;
+	}
+			.button-inner{
+				max-width: 100%!important;
+				img{
+					color:#494949;
+					width: 24px !important;
+					heigth: auto !important; 
+				}
+		}
+
+		.toolbar-title{
+				font-size: 1.5rem !important;
+		}
+
+		.buttonlar{
+			max-width: 100%!important  ;
+			.rightButtons{
+				right: 0!important;
+			}
+			.button-inner{
+				max-width: 100%;
+			}
+			margin: 0!important;
+		}
+
+		.basKisim{
+			align-items: center!important;
+		}
+
+		.card-title{
+			h3{
+				display: inline-block;
+			}
+		}
+}

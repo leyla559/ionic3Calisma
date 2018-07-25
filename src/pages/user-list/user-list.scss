@@ -1,0 +1,49 @@
+page-user-list {
+	.searchText{
+		background-color: #eeeeee !important;
+		border:none!important;
+
+	}
+
+	.FilterIco{
+		width: 24px;
+		height: auto;
+		border:none!important;
+	}
+
+	.searchbar-ios{
+			background: rgba(0,0,0,0.0)!important;
+			border-bottom:none;
+		}
+
+		ion-item{
+			h3{
+				margin-left: 12px!important;
+			}
+			padding: 0!important;
+		}
+
+	.filterSection{
+
+		
+
+		border-bottom: 2px solid #eeeeee;
+		padding: 0;
+		margin: 0;
+	}
+
+	.downSection{
+		text-align: left;
+		.button-inner{
+
+			color:#4b4b4b!important;
+			justify-content:flex-start;
+		}
+		button{
+			padding-left: 0;
+			border-bottom: 2px solid #eeeeee;
+		}
+
+	}
+
+}
