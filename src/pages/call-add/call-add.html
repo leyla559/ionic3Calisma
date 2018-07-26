@@ -1,0 +1,74 @@
+<ion-header>
+<ion-navbar>
+   <ion-buttons left>
+      <button ion-button icon-only (click)="goBack()">
+        <ion-icon ios="ios-arrow-back" md="md-arrow-back" class="backButton"></ion-icon>
+      </button>
+    </ion-buttons>
+
+    <ion-title text-center>
+      Çağrı Güncelleme
+    </ion-title>
+
+    <ion-buttons right>
+      <button ion-button icon-only class="messagePageButton" (click)="openMessagePage()">
+        <ion-icon ios="ios-mail" md="md-mail"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+	<ion-item class="firstItem">
+  		<ion-label>Durum</ion-label>
+ 		<ion-select>
+    		<ion-option value="kirikMasa">Masa Kırıldı</ion-option>
+    		<ion-option value="kirikCam">Pencere Kırıldı</ion-option>
+    		<ion-option value="kiriSise">Şişe Kırıldı</ion-option>
+ 		</ion-select>
+	</ion-item>
+	<ion-item>
+		<ion-label>Kaynak</ion-label>
+ 		<ion-select>
+    		<ion-option value="lobby">Loby</ion-option>
+    		<ion-option value="secondFloor">2. Kat</ion-option>
+    		<ion-option value="kitchen">kitchen</ion-option>
+ 		</ion-select>
+	</ion-item>
+	<ion-item>
+		<ion-label>İşlem tipi</ion-label>
+ 		<ion-select>
+    		<ion-option value="high">Yüksek</ion-option>
+    		<ion-option value="normal">Normal</ion-option>
+    		<ion-option value="low">Düşük</ion-option>
+ 		</ion-select>
+	</ion-item>
+	<ion-item>
+   		<ion-label color="dark">Fiziki Mekan</ion-label>
+    	<ion-input></ion-input>
+  </ion-item>
+  <ion-item>
+  		<ion-label color="dark">Yapılacak İşlem</ion-label>
+    	<ion-input></ion-input>
+  </ion-item>
+  <ion-item>
+    	<ion-label color="dark">Yapacak Personel</ion-label>
+    	<ion-input></ion-input>
+  </ion-item>
+</ion-content>
+
+<ion-footer>
+
+	<ion-row>
+		<ion-col col-3>
+			<ion-icon ios="ios-information-circle-outline" md="md-information-circle"></ion-icon>
+			Versiyon
+		</ion-col>
+		<ion-col offset-1 col-4>
+			<ion-icon ios="ios-person" md="md-person"></ion-icon>
+			UserName
+		</ion-col>
+	</ion-row>
+
+</ion-footer>

@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Yeni Mesaj</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+	<div class="genelDiv">
+		<div class="divim">
+			<ion-item>
+	  		    <ion-label color="dark" stacked>Kimden</ion-label>
+	   			<ion-input type="text" value="KullaniciAdi" readonly></ion-input>
+	  		</ion-item>
+	  		<ion-item row>
+	  		<ion-label fixed col-3>Kime</ion-label>
+	 		<ion-select col-7 float-right>
+	    		<ion-option value="UserID">Kullanıcı Listesi</ion-option>
+	 		</ion-select>
+	  		</ion-item>
+			<ion-item>
+				<ion-label>
+					Mesaj
+				</ion-label>
+				<ion-textarea>
+					
+				</ion-textarea>
+			</ion-item>
+		</div>
+		<ion-buttons right class="buttonlar">
+			<button ion-button color="danger" (click)="kapatBtn()">Kapat</button>
+			<button ion-button color="secondary">Kaydet</button>
+		</ion-buttons>
+	</div>
+</ion-content>

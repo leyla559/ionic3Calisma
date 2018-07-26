@@ -3,10 +3,10 @@
   <ion-navbar>
    <ion-buttons left>
       <button ion-button icon-only>
-        <img src="./../../assets/icon/Download_32x32.png">
+        <ion-icon class="iconlar" ios="ios-download" md="md-download"></ion-icon>
       </button>
       <button ion-button icon-only>
-        <img src="./../../assets/icon/Refresh_32x32.png">
+        <ion-icon class="iconlar" ios="ios-refresh" md="md-refresh"></ion-icon>
       </button>
     </ion-buttons>
 
@@ -16,10 +16,10 @@
 
     <ion-buttons right>
       <button ion-button icon-only>
-        <img src="./../../assets/icon/search.png">
+        <ion-icon class="iconlar" ios="ios-search" md="md-search"></ion-icon>
       </button>
       <button ion-button icon-only (click)="openHome()">
-        <img src="./../../assets/icon/Cancel_32x32.png">
+        <ion-icon class="iconlar" ios="ios-exit" md="md-exit"></ion-icon>
       </button>
     </ion-buttons>
   </ion-navbar>
@@ -29,18 +29,81 @@
 <ion-content>
 
 	<ion-card>
-		<ion-card-title>
-    		<h3>Kat Hizmetleri</h3>
-    		<ion-icon name="arrow-forward" right></ion-icon>
+		<ion-card-title >
+    		<h2 margin-left left>Kat Hizmetleri</h2>
+    		<ion-icon margin-right float-right name="arrow-forward" class="rightArrow"></ion-icon>
     	</ion-card-title>
-  		<img src="img/nin-live.png"/>
-  	<ion-card-content>
   		
-    <p>
-      The most popular industrial group ever, and largely
-      responsible for bringing the music to a mass audience.
-    </p>
+  	<ion-card-content>
+  		<div class="cardImageRight">
+  			<div float-start>
+  				<ion-icon class="megafon" ios="ios-megaphone" md="md-megaphone"></ion-icon>
+  			</div>
+  			<div margin-left>
+  				<h3 class="place">Yer</h3>
+  				<h3 class="status">Durum</h3>
+  				<div class="workProperty">
+  					<h4>Islem tipi :</h4><span> Normal</span>
+  				</div>
+  			</div>
+  		</div>
+  </ion-card-content>
+  <ion-card-content class="cardBottom">
+
+  	<ion-row class="gridSystem">
+  		<ion-col col-3>
+  			<h2>Durum</h2>
+  		</ion-col> 
+  		<ion-col col-1 class="doubleDot" text-center>
+  			<i>:</i>
+  		</ion-col> 	
+  		<ion-col col-8 class="values">
+  			Durum
+  		</ion-col>
+  	</ion-row>
+  	<ion-row class="gridSystem">
+  		<ion-col col-3>
+  			<h2>Personel</h2>
+  		</ion-col> 
+  		<ion-col col-1 class="doubleDot" text-center>
+  			<i>:</i>
+  		</ion-col> 	
+  		<ion-col col-8 class="values">
+  			PersonelName
+  		</ion-col>
+  	</ion-row>
+  	<ion-row class="gridSystem">
+  		<ion-col col-3>
+  			<h2>B.Tarih</h2>
+  		</ion-col> 
+  		<ion-col col-1 class="doubleDot" text-center>
+  			<i>:</i>
+  		</ion-col> 	
+  		<ion-col col-8 class="values">
+  			BaslangicTarih
+  		</ion-col>
+  	</ion-row>
   </ion-card-content>
 </ion-card>
 
+<button ion-button class="addButton" (click)="addNewCall()">+</button>
+
 </ion-content>
+
+<ion-footer>
+
+	<ion-row>
+		<ion-col col-3>
+			<ion-icon ios="ios-information-circle-outline" md="md-information-circle"></ion-icon>
+			Versiyon
+		</ion-col>
+		<ion-col offset-1 col-4>
+			<ion-icon ios="ios-person" md="md-person"></ion-icon>
+			UserName
+		</ion-col>
+	</ion-row>
+
+</ion-footer>
+
+
+

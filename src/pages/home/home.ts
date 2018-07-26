@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
-import { ModalController, NavController } from 'ionic-angular';
+import { ModalController } from 'ionic-angular';
 
 import { UserListPage } from './../user-list/user-list';
-import { CallCenterPage } from '../call-center/call-center';
 
 
 

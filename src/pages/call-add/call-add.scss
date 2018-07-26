@@ -1,0 +1,28 @@
+page-call-add {
+	.backButton{
+		color:#404040;
+	}
+
+	.messagePageButton{
+		color:#d5844d;
+	}
+	.item{
+		border-left: 1px solid #c8c7cc;
+		border-right: 1px solid #c8c7cc;
+		padding: 0;
+		.item-inner{
+			padding-left: 12px;
+		}
+	}
+	.firstItem{
+		border-top: 1px solid #c8c7cc;
+	}
+	.footer{
+			height: 30px;
+			background-color: #404040;
+			border-radius: 5%;
+			.col{
+				color:white;
+			}
+		}
+}

@@ -3,13 +3,12 @@ page-call-center {
 		width: 24px;
 		height: auto;
 	}
+
+	.iconlar{
+		color:black;
+	}
 			.button-inner{
 				max-width: 100%!important;
-				img{
-					color:#494949;
-					width: 24px !important;
-					heigth: auto !important; 
-				}
 		}
 
 		.toolbar-title{
@@ -32,8 +31,92 @@ page-call-center {
 		}
 
 		.card-title{
-			h3{
+			h2{
+				text-align: left;
 				display: inline-block;
 			}
 		}
+
+		.card-image{
+			width: 44px;
+			height: auto;
+		}
+
+		.cardImageRight{
+			.place{
+				color:#0e3150;
+				font-weight: 700;
+			}
+			.status{
+				color:#0e3150;
+				font-weight: 700;
+
+			}
+			.workProperty{
+				h4{
+					color:#0e3150;
+					font-weight: 700;
+				}
+
+				
+				span {
+					font-weight: normal;
+					color:#455d7a;
+				}
+			}
+			.megafon{
+				font-size: 4rem;
+			}
+			div{
+				display: inline-block;
+			}
+			h4{
+				display: inline-block;
+			}
+			display: inline-block;
+		}
+
+		.cardBottom{
+			.col{
+				padding: 0px;
+			}
+			border-top: 1px solid #dcdcdc;
+			h2{
+				font-size: 2rem;
+				display: inline-block;
+			}
+			.doubleDot{
+				text-align: center;
+				font-weight: 800;
+			}
+
+			.values{
+				font-style: italic;
+				color:#5f5f5f;
+			}
+			.gridSystem{
+				align-items:center;
+			}
+			
+		}
+		.addButton{
+			background-color: #d5844d;
+			position: fixed;
+			right: 30px;
+			bottom: 40px;
+			border-radius: 50%;
+			width: 50px;
+			height: 50px;
+		}
+
+		.footer{
+			height: 30px;
+			background-color: #404040;
+			border-radius: 5%;
+			.col{
+				color:white;
+			}
+		}
+
+
 }

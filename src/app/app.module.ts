@@ -8,6 +8,12 @@ import { MyApp } from './app.component';
 import { HomePage } from './../pages/home/home';
 import { UserListPage } from './../pages/user-list/user-list';
 import { CallCenterPage } from './../pages/call-center/call-center';
+import { CallAddPage } from './../pages/call-add/call-add';
+import { MessagePage } from './../pages/message/message';
+import { NewMessagePage } from './../pages/new-message/new-message';
+
+
+
 
 
 
@@ -16,7 +22,11 @@ import { CallCenterPage } from './../pages/call-center/call-center';
     MyApp,
     HomePage,
     UserListPage,
-    CallCenterPage
+    CallCenterPage,
+    CallAddPage,
+    MessagePage,
+    NewMessagePage
+
   ],
   imports: [
     BrowserModule,
@@ -27,7 +37,10 @@ import { CallCenterPage } from './../pages/call-center/call-center';
     MyApp,
     HomePage,
     UserListPage,
-    CallCenterPage
+    CallCenterPage,
+    CallAddPage,
+    MessagePage,
+    NewMessagePage
   ],
   providers: [
     StatusBar,

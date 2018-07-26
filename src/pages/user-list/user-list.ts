@@ -26,7 +26,6 @@ export class UserListPage {
  	}
 
  	openCallCenter(){
- 		this.modalClose();
  		const callCenter = this.modal.create(CallCenterPage);
  		callCenter.present();
  	}

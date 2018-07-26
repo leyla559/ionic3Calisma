@@ -1,0 +1,42 @@
+<ion-header>
+<ion-navbar>
+   <ion-buttons left>
+      <button ion-button icon-only (click)="goBack()">
+        <ion-icon ios="ios-arrow-back" md="md-arrow-back" class="backButton"></ion-icon>Geri
+      </button>
+    </ion-buttons>
+
+    <ion-title text-center>
+      Mesaj Listesi
+    </ion-title>
+
+    <ion-buttons right>
+      <button ion-button icon-only class="messagePageButton" (click)="newMessageModal()">
+       <ion-icon ios="ios-add" md="md-add"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+
+<ion-content padding>
+
+</ion-content>
+
+
+
+<ion-footer>
+
+	<ion-row>
+		<ion-col col-3>
+			<ion-icon ios="ios-information-circle-outline" md="md-information-circle"></ion-icon>
+			Versiyon
+		</ion-col>
+		<ion-col offset-1 col-4>
+			<ion-icon ios="ios-person" md="md-person"></ion-icon>
+			UserName
+		</ion-col>
+	</ion-row>
+
+</ion-footer>
