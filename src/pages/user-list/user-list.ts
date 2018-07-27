@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavParams, ViewController, ModalController} from 'ionic-angular';
+import { IonicPage, NavParams, ViewController, NavController} from 'ionic-angular';
+import { HomePage } from './../home/home';
 
-import { CallCenterPage } from '../call-center/call-center';
+
 
 
 
@@ -11,12 +12,11 @@ import { CallCenterPage } from '../call-center/call-center';
   templateUrl: 'user-list.html',
 })
 
-	
-
-
 export class UserListPage {
+	kullanici = [];
+	Kullanicilar: Array <any> = [];
 
- 	constructor(public navParams: NavParams, public view: ViewController, public modal: ModalController){
+ 	constructor(public navParams: NavParams, public view: ViewController, public navCtrl: NavController){
 
   		
  	}
@@ -25,13 +25,14 @@ export class UserListPage {
  		this.view.dismiss();
  	}
 
- 	openCallCenter(){
- 		const callCenter = this.modal.create(CallCenterPage);
- 		callCenter.present();
+ 	ionViewWillLoad(){
+ 	
  	}
 
  	ionViewDidLoad() {
-    console.log('ionViewDidLoad UserListPage');
+ 			this.Kullanicilar = this.navParams.get('kData');
+ 		
+   		console.log(this.Kullanicilar);
   }
 
 }
